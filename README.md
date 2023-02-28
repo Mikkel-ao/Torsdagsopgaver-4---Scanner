@@ -75,15 +75,18 @@ This task will require you to use the Scanner type, to get some data from the us
 ---
 
 ## Task 4. Textbased menu for a game
-In this program the user is presented with a list of actions. When he types a number associated with an action, the program will print a response that corresponds to that action.
+In this program the user is presented with a list of actions. There will be two classes, where one represents the menu and the other one (Main) instantiates and uses the menu. 
+The point of this excersise is 
+1. learning how to separate the code into client class and entity class. 
+2. learning how to work with ArrayLists
+
 
 4.a Create an entity class, GameMenu.
 
-4.b Add a private attribute, 'actions' of type ArrayList to the class.
+4.b Add a private instance variable, <code>actions</code> of type ArrayList\<String\> to the class.
 
 4.c Add a constructor with a parameter of type ArrayList. This is so that the GameMenu class can be instantiated with a list of actions.(shown in step 4.f)  
-
-4.d In the GameMenu contructor, assign the list received, to the 'actions' attribute. 
+4.d In the GameMenu contructor, assign the list received as an argument, to the instance variable <code>actions</code>. 
 
 4.e Create a client class, Main with a main method. (You will use this class to test the GameMenu class) after the next step.
 
@@ -116,9 +119,10 @@ System.out.print(actions.get(2)) // expected output: "Pause game"
 
 
 ## Task 5:
-We will continue with the code you produced in task 4. Now we want to make it possible for a user to select an option in the menu. 
+We will continue with the code you produced in task 4. Now we want to make it possible for a user to select an action in the menu. When he types a number associated with an action, the program will print a message that corresponds to the chosen action. 
+The point of this exercise is to work with the Scanner to create a dialog with the user.
 
-5.a Create a method in the Menu class, <code>getAction</code> that prints the sentence "Type a number to choose an action" and then prints each elements in the <code>options</code> attribute. 
+5.a Create a method in the GameMenu class, <code>getAction</code> that prints the sentence "Type a number to choose an action" and then prints each elements in the <code>options</code> attribute. 
  <details>
   <summary>Hint</summary>
   <p>Reuse the displayMenu method you wrote in step 4.h to accomplish the last bit. 
@@ -127,30 +131,19 @@ We will continue with the code you produced in task 4. Now we want to make it po
 
 5.b Next, in the <code>getAction</code> method, create a new Scanner object. Declare a variable <code>String choice</code> and assign it the user's input. (Similar to what you did in step 2.c and 2.d)
 
-<details>
-  <summary>Solution to this step</summary>
-  <p>
-    <code>
-    Scanner scanner = new Scanner(System.in);
-    String choice = scanner.nextLine();
-</code>
-</p>
-</details>
+5.c Let the <code>getAction</code> method return the user's choice. (If the method has void as return type, change that to the return type of String). Then return the choice variable you declared in step 5.b 
 
-5.c Let the <code>getAction</code> method return the user's choice. (If the method has void as return type, change that to return type String). Then return the choice variable you declared in step 5.b 
-
-
-5.d In the main method, call the <code>getAction</code> -method on the Menu instance, saving the return value (the user response) in a variable. 
+5.d In the main method of Main, call the <code>getAction</code> method on the Menu instance, saving the return value (the user response) in a variable. 
 <details>
   <summary>Peep solution</summary>
   <p>
     <code>
-    String userChoice = getOrder();
+    String userChoice = getAction();
 </code>
 </p>
 </details>
 
-5.d Create a method in the Main class, for testing that the user dialog in the Menu class works as expected. The method should have this signature: <code>public static void doAction(int action)</code>. The <code> int action </code> parameter represents the user's choice of action. 
+5.d Create a new method in the Main class, for printing the message that corresponds to the action the user has chosen. The method should have this signature: <code>public static void doAction(int action)</code>. 
 
 5.f In the body of the <code>doAction</code> method, write a <code>switch-case</code> with a case for each of the 4 options added in step 4.f. In each case block you will print a message that corresponds to the user's choice:
    + 1: "Starting the game now"
@@ -158,10 +151,7 @@ We will continue with the code you produced in task 4. Now we want to make it po
    + 3: "Game paused"
    + 4: "Ending game"
 
-
-
-
-5.g Convert the value to an int before using it as an argument in a call to the <code>doAction</code> method in the you created in step 5.e and 5.f
+5.g In step 5.d you created a variable called useChoice of type String. Convert the value to an int before using it as an argument in a call to the <code>doAction</code> method.
 <details>
   <summary>hint</summary>
   <p>

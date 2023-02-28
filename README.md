@@ -1,6 +1,6 @@
 ### Exercises with Scanner 
-Today's tasks should be coded using a text editor. For each Task you will create a new folder and start by adding a Main class with a main method (except for Task 2). 
-In task 2 you will write all the code in this main method, while in 1 and 4 you will be asked to make both a Main class with a main method in it (sometimes refered to as the "client class") and an "entity class" whithout a main method but with a constructor. 
+Today's tasks should be coded using a text editor. For each Task you will create a new folder and start by adding a Main class with a main method (except for Task 3). 
+In task 2 you will write all the code in the main method, while in 1 and 4 you will be asked to make both a Main class with a main method in it (sometimes refered to as the "client class") and an "entity class" whithout a main method but with a constructor. 
 
 NOTE: Task 5 is a continuation of Task 4. There are many small steps and you might loose track. Follow the steps as far as you can. Use the hints and codesnippets provided. The goal is to prepare yourself for review, where we will code it together. 
 
@@ -52,7 +52,7 @@ This task will require you to use the Scanner type, to get some data from the us
   <summary>Hint</summary>
   <p><code>Scanner scanner = new Scanner(System.in);</code></p>
 </details>
-2.d: Declare a String variable, <code>name</code> and assign the content of the scanners call to <code>nextLine() to it.</code>
+2.d: Declare a String variable, <code>name</code> and assign it the content of the scanner's call to <code>nextLine()</code>.
 <details>
   <summary>peep solution</summary>
   <p><code>String input =  scanner.nextLine();</code></p>
@@ -62,7 +62,7 @@ This task will require you to use the Scanner type, to get some data from the us
 
 2.f: Declare another variable of type int, <code>age</code> and assign it the value returned by the nextInt method of the Scanner object. (you may reuse the Scanner object created in 2.c).
 
-2.g: Print the value the user writes (print the <code>age</code> variable)
+2.g: Print the value the user writes (the <code>age</code> variable)
 
 2.h: Declare a third variable of type int. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at 67 years. Print the result.
 
@@ -118,7 +118,7 @@ System.out.print(actions.get(2)) // expected output: "Pause game"
   </p>
 </details>
 
-4.i From the main method in Main, test the displayMenu method by calling it on the GameMenu instance created in step 4.g. 
+4.i From the main method in Main, test the <code>displayMenu</code> method by calling it on the GameMenu instance created in step 4.g. 
 
 
 ## Task 5:

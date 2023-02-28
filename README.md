@@ -6,6 +6,8 @@ NOTE: Task 5 is a continuation of Task 4. There are many small steps and you mig
 
 ---
 ## Task 1:
+In this exercise you will code an entity class Team and a client class Main. You will create private attributes on the entity class and give it a parameterized constructor, a toString and a setter method.
+
 1.a Create a class Main with a main method.
 
 1.b Create an entity class called Team.
@@ -35,7 +37,7 @@ Rang: 3"
 
 (Precise wording will depend on the name and rank of the Team instance you have created in step 1.g)
 
-1.k From the main method, print the instance you created in step 1.g
+1.k From the main method, create 5 more Team instances and print them.
 
 
 ## Task 2: Scanner basics: calculate years to retirement 
@@ -75,7 +77,8 @@ This task will require you to use the Scanner type, to get some data from the us
 ---
 
 ## Task 4. Textbased menu for a game
-In this program the user is presented with a list of actions. There will be two classes, where one represents the menu and the other one (Main) instantiates and uses the menu. 
+In this program the user is presented with a list of actions. There will be two classes. One, GameMenu represents the menu and the other, Main, instantiates and uses the menu. 
+
 The point of this excersise is 
 1. learning how to separate the code into client class and entity class. 
 2. learning how to work with ArrayLists
@@ -151,7 +154,7 @@ The point of this exercise is to work with the Scanner to create a dialog with t
    + 3: "Game paused"
    + 4: "Ending game"
 
-5.g In step 5.d you created a variable called useChoice of type String. Convert the value to an int before using it as an argument in a call to the <code>doAction</code> method.
+5.g In step 5.d you created a variable called <code>userChoice</code>code> of type String. Convert the value to an int before using it as an argument in a call to the <code>doAction</code> method.
 <details>
   <summary>hint</summary>
   <p>

@@ -18,10 +18,13 @@ public class GuessANumber {
 
     private static void makeAGuess(){
 		// Create a Scanner object   	 
-    	// Read user input
     	
+   
+
+
         //use hasNextDouble to check if input is numeric, 
         // if so...
+// Read user input
         //   Compare it with the random number
         //   Let the user know the result of the comparison
         //   Let the user try again by calling this method recursively

@@ -39,6 +39,10 @@ Rang: 3"
 
 1.k From the main method, create 5 more Team instances and print them.
 
+1.l Previously you created an ArrayList of team playernames in the Team class. No add a new method to the class, which adds a name to this List.
+
+1.m Adjust the toString method so that each playername is written - prefably so that each name is on it's own line.
+
 
 ## Task 2: Scanner basics: calculate years to retirement 
 This task will require you to use the Scanner type, to get some data from the user. You will then use one of the inputs in a simple calculation, that will tell the user how many years they have to work before they can retire.
@@ -146,7 +150,7 @@ The point of this exercise is to work with the Scanner to create a dialog with t
 </p>
 </details>
 
-5.d Create a new method in the Main class, for printing the message that corresponds to the action the user has chosen. The method should have this signature: <code>public static void doAction(int action)</code>. 
+5.e Create a new method in the Main class, for printing the message that corresponds to the action the user has chosen. The method should have this signature: <code>public static void doAction(int action)</code>. 
 
 5.f In the body of the <code>doAction</code> method, write a <code>switch-case</code> with a case for each of the 4 options added in step 4.f. In each case block you will print a message that corresponds to the user's choice:
    + 1: "Starting the game now"

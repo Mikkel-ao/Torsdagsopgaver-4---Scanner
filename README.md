@@ -6,7 +6,7 @@ NOTE: Task 5 is a continuation of Task 4. There are many small steps and you mig
 
 ---
 ## Task 1:
-In this exercise you will code an entity class called <code>Team</code> and a client class called <code>Main</code>. You will create private attributes int the entity class and give it a parameterized constructor, a <code>toString()</code> and a setter method.
+In this exercise you will write an entity class called <code>Team</code> and a client class called <code>Main</code>. You will create private attributes int the entity class and give it a parameterized constructor, a <code>toString()</code> and a setter method.
 
 1.a Create a class <code>Main</code> with a <code>main</code> method.
 
@@ -45,30 +45,30 @@ Rang: 3"
 
 
 ## Task 2: Scanner basics: calculate years to retirement 
-This task will require you to use the Scanner type, to get some data from the user. You will then use one of the inputs in a simple calculation, that will tell the user how many years they have to work before they can retire.
+This task will require you to use the <code>Scanner</code> class to get some data from the user. You will then use one of the inputs in a simple calculation, that will tell the user how many years they have to work before they can retire.
 
-2.a: create a Main class with a main method.
+2.a: create a <code>Main</code> class with a <code>main</code> method.
 
-2.b: In the main method start by printing a message to the user: "Please type your name".
+2.b: In the <code>main</code> method start by printing this message to the user: "Please type your name".
 
-2.c: Create a Scanner object for reading the command line (remember to import the Scanner class from the util library: <code>import java.util.Scanner; </code>)
+2.c: Create a <code>Scanner</code> object for reading from the command line (remember to import the <code>Scanner</code> class from the util library: <code>import java.util.Scanner; </code>)
 <details>
   <summary>Hint</summary>
   <p><code>Scanner scanner = new Scanner(System.in);</code></p>
 </details>
-2.d: Declare a String variable, <code>name</code> and assign it the content of the scanner's call to <code>nextLine()</code>.
+2.d: Declare a <code>String</code> variable <code>name</code> and assign to it whatever is returned from a call to scanner's <code>nextLine()</code> method.
 <details>
   <summary>peep solution</summary>
   <p><code>String input =  scanner.nextLine();</code></p>
 </details>
 
-2.e: Print the name of the user in a greeting, followed by the message "Please type your age"
+2.e: Print the name of the user in a greeting (i.e. "Hello \<name\>") followed by the message "Please type your age"
 
-2.f: Declare another variable of type int, <code>age</code> and assign it the value returned by the nextInt method of the Scanner object. (you may reuse the Scanner object created in 2.c).
+2.f: Declare another variable of type int  called <code>age</code> and assign to it the value returned by the <code>nextInt()</code> method of the <code>Scanner</code> object (reuse the <code>Scanner</code> object created in 2.c).
 
-2.g: Print the value the user writes (the <code>age</code> variable)
+2.g: Print the value the user writes (the <code>age</code> variable) i.e. like this "You are \<age\> years old".
 
-2.h: Declare a third variable of type int. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at 67 years. Print the result.
+2.h: Declare a third variable of type int. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at 67 years. Print the result (i.e. like this "You have \<x\> years until retirement".
 
 ---
 

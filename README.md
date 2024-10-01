@@ -66,14 +66,14 @@ This task will require you to use the <code>Scanner</code> class to get some dat
 
 2.f: Declare another variable of type int  called <code>age</code> and assign to it the value returned by the <code>nextInt()</code> method of the <code>Scanner</code> object (reuse the <code>Scanner</code> object created in 2.c).
 
-2.g: Print the value the user writes (the <code>age</code> variable) i.e. like this "You are \<age\> years old".
+2.g: Print the value the user writes (the <code>age</code> variable) i.e. like this: "You are \<age\> years old".
 
-2.h: Declare a third variable of type int. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at 67 years. Print the result (i.e. like this "You have \<x\> years until retirement".
+2.h: Declare a third variable of type int. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at age 67. Print the result (i.e. like this: "You have \<x\> years until retirement").
 
 ---
 
-## Task 3: Finish the GuessANumber class
-3.a Open the java file above called GuessANumber.java and try to finish the code. Follow the steps written as comments in the <code>makeAGuess</code> method. Recursion is mentioned. This means that the method must call itself.
+## Task 3: Complete the GuessANumber class
+3.a Open the java file above called <code>GuessANumber.java</code> and complete the code. Follow the steps written as comments in the <code>makeAGuess()</code> method. Recursion is mentioned. This means that the method must call itself. If you are unsure how to use recursion, you may use another strategy.
 <details>
   <summary>Not sure about recursion?</summary>
   <p><a href="https://www.geeksforgeeks.org/recursion-in-java/">Read about it here</a></p>

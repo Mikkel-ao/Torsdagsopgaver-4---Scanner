@@ -81,24 +81,23 @@ This task will require you to use the <code>Scanner</code> class to get some dat
 ---
 
 ## Task 4. Textbased menu for a game
-In this program the user is presented with a list of actions. There will be two classes. One, GameMenu represents the menu and the other, Main, instantiates and uses the menu. 
+In this program the user is presented with a list of actions to choose from. There will be two classes. The class <code>GameMenu</code> represents the menu and the other class <code>Main</code> instantiates and uses the menu. 
 
 The point of this excersise is 
 1. learning how to separate the code into client class and entity class. 
-2. learning how to work with ArrayLists
+2. learning how to work with <code>ArrayLists</code>
 
+4.a Create an entity class called <code>GameMenu</code>.
 
-4.a Create an entity class, GameMenu.
+4.b Add a private instance variable <code>actions</code> with the type ArrayList\<String\> to the class.
 
-4.b Add a private instance variable, <code>actions</code> of type ArrayList\<String\> to the class.
+4.c Add a constructor with a parameter of the type <code>ArrayList</code> to the constructor. This is so that objects of the <code>GameMenu</code> class can be instantiated with a list of actions.(shown in step 4.f)  
+4.d In the <code>GameMenu</code> contructor, assign the list received as an argument to the instance variable <code>actions</code>. 
 
-4.c Add a constructor with a parameter of type ArrayList. This is so that the GameMenu class can be instantiated with a list of actions.(shown in step 4.f)  
-4.d In the GameMenu contructor, assign the list received as an argument, to the instance variable <code>actions</code>. 
+4.e Create a client class, <code>Main</code> with a <code>main</code> method. (You will use this class to test the <code>GameMenu</code> class).
 
-4.e Create a client class, Main with a main method. (You will use this class to test the GameMenu class) after the next step.
-
-4.f In the main method create an ArrayList of type String called <code>actions</code>. Don't forget to import the ArrayList class. 
-Add the following String values to the <code>actions</code> ArrayList:
+4.f In the <code>main</code> method create an <code>ArrayList\<String\></code> called <code>actions</code>. Don't forget to import the <code>ArrayList</code> class. 
+Add the following <code>String</code> values to the <code>actions</code> list:
 + "1) Start game"
 + "2) Resume game"
 + "3) Pause game"
@@ -106,23 +105,23 @@ Add the following String values to the <code>actions</code> ArrayList:
 
 <details>
   <summary>Tip for testing:</summary>
-You can test the actions ArrayList by printing one of the elements:
+You can test the actions <code>ArrayList</code> by printing one of the elements:
 
 <code>
 System.out.print(actions.get(2)) // expected output: "Pause game"
 </code>
 </details>
 
-4.g Still in the main method, instantiate the GameMenu class with the actions reference as an argument to the constructor. 
+4.g Still in the <code>main</code> method, instantiate the<code>GameMenu</code> class with the <code>actions</code> list as an argument to the constructor. 
 
-4.h In the GameMenu class add a method <code>displayMenu</code> that prints out the elements of the actions attribute. 
+4.h In the <code>GameMenu</code> class add a method <code>displayMenu()</code> that prints out the elements of the actions attribute. 
 <details>
   <summary>Hint</summary>
   <p>you may use a <code>for-each</code>loop for printing the options
   </p>
 </details>
 
-4.i From the main method in Main, test the <code>displayMenu</code> method by calling it on the GameMenu instance created in step 4.g. 
+4.i From the <code>main</code> method in <code>Main</code> test the <code>displayMenu()</code> method by calling it on the <code>GameMenu</code> instance created in step 4.g. 
 
 
 ## Task 5:

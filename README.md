@@ -160,9 +160,11 @@ The point of this exercise is to work with the <code>Scanner</code> to create a 
 <details>
   <summary>Hint</summary>
   <p>
+    You can parse from a <code>String</code> to an int by using
     <code>
     Integer.parseInt()
 </code>
+    Look it up in Java's API.
 </p>
 </details>
 

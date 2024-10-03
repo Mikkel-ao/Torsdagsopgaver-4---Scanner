@@ -9,14 +9,16 @@ public class GuessANumber {
         Random random = new Random();
         rnd_number = random.nextInt(100) + 1;
         System.out.println( "I'm thinking of a number between 1 and 100 (including both).");
-	System.out.println( "Can you guess what it is?...");
+	    System.out.println( "Can you guess what it is?...");
         makeAGuess();
     }
 
 
     private static void makeAGuess(){
-	// Create a Scanner object   	 
-        // use hasNextDouble to check if input is numeric, 
+	// Create a Scanner object
+        Scanner scanner = new Scanner(System.in);
+        // use hasNextDouble to check if input is numeric,
+        if scanner.hasNextDouble();
         // if so...
 	// Read user input
         // Compare it with the random number

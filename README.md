@@ -1,3 +1,8 @@
+MIKKEL ANDREAS OLSEN
+
+EMAIL: CPH-MO345@CPHBUSINESS.DK
+
+
 ### Exercises with Scanner 
 Today's tasks should be coded using a text editor. For each task you will create a new folder and start by adding a class called <code>Main</code> (referred to as "The Main class" or the "client class" in the following) with a <code>main</code> method (except for Task 3). 
 In Task 2 you will write all the code in the <code>main</code> method, while in 1 and 4 you will be asked to make both a <code>Main</code> class with a <code>main</code> method in it and an "entity class" without a <code>main</code> method but with a constructor and maybe some fields/attributes/instance variable. 

@@ -11,12 +11,15 @@ public class Main {
         // System.out.print(actions.get(2));
         GameMenu menu = new GameMenu(actions);
         // menu.displayMenu(actions);
+        // 5.d
         String userChoice = menu.getAction();
+        // 5.g
         int convert = Integer.parseInt(userChoice);
         doAction(convert);
     }
-
+    // 5.e
     public static void doAction(int actions) {
+        // 5.f
         switch(actions) {
             case 1:
                 System.out.println("Starting the game now");

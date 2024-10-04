@@ -14,11 +14,13 @@ public class GameMenu {
         }
 
     }
-
+    // 5.a
     public String getAction() {
         System.out.println("Type a number to choose an action ");
         displayMenu(actions);
+        // 5.b
         Scanner scanner = new Scanner(System.in);
+        // 5.c
         String choice = scanner.nextLine();
         return choice;
 

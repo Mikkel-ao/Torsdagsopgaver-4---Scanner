@@ -9,7 +9,7 @@ public class GameMenu {
     }
 
     public void displayMenu(ArrayList<String> actions) {
-        for (int i = 0; i < actions.size(); i++) {
+        for(int i = 0; i < actions.size(); i++) {
             System.out.println(actions.get(i));
         }
 
